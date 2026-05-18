@@ -1,125 +1,171 @@
 <html>
+<html lang="en">
 <head>
-<title> Hot Beans </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hot Beans - Team</title>
 <style>
-body{
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  
-}
- 
-ul li {
-  float: right;
-}
+
+  body{
+    background:#0b0b0b;
+    color:white;
+    min-height:100vh;
+  }
 
   header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 15px 30px;
-   background: white;
-   border-bottom: 1px solid #ccc;
-   }
-   
-   .logo{
-    font-size: 20px;
-	font-weight: bold;
-	}
-	
-	nav a{
-	 margin: 0 10px;
-	 text-decoration: none;
-	 color:#333;
-	}
-	
-	.search-box{
-	 padding: 5px;
-	}
-	
-	.container{
-	  padding: 30px;
-	}
-	
-	.intro{
-	 margin-bottom: 20px;
-	 font-weight: bold;
-	}
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 5%;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    gap:15px;
+  }
 
-    .grid{
-      display:grid;
-	  grid-template-columns:2fr 1fr;
-	  gap: 20px;
-	}
-	
-	.box{
-	  background: white;
-	border-radius: 8px;
-	  padding: 20px
-	  text-align:center;
-	  min-height: 150px;
-	  display: flex;
-	  justify-content: center;
+  .left-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+  }
+
+  .logo{
+    font-size:20px;
+    font-weight:bold;
+    color:#f4b36b;
+  }
+
+  nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+  }
+
+  nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+  }
+
+  nav ul li a:hover{
+    color:#f4b36b;
+  }
+
+  .search-box{
+    padding:8px 12px;
+    border:1px solid #333;
+    border-radius:6px;
+    background:#111;
+    color:white;
+    font-size:1rem;
+  }
+
+  .w3-row-padding{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px 5%;
+  }
+
+  .w3-third{
+    flex:1 1 calc(33.333% - 20px);
+    min-width:250px;
+  }
+
+  .w3-container{
+    background:#111;
+    border-radius:8px;
+    padding:15px;
+    text-align:center;
+  }
+
+  .w3-container p{
+    color:white;
+  }
+
+  .w3-container img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+  }
+
+  @media(max-width:768px){
+    nav ul{
+      flex-direction:column;
+      gap:10px;
+    }
+    .w3-third{
+      flex:1 1 100%;
+    }
+    .search-box{
+      width:100%;
+      margin-top:10px;
+    }
+  }
 
 </style>
 </head>
 <body>
-<header>
-<div class="logo">Hot Beans</div>
-<nav>
-<ul>
-<li><a href="https://kristoffe99.github.io/home/">Home</a></li>
-<li><a href="https://kristoffe99.github.io/meet-the-team/">Meet the team</a></li>
-<li><a href="https://kristoffe99.github.io/profession/">Profession</a></li>
-<li><a href="https://kristoffe99.github.io/apply/">Apply</a></li>
-<li><a href="https://kristoffe99.github.io/courses/">Courses</a></li>
-</ul>
-</nav>
-<input class="search-box" type="text" placeholder="Search">
-</header>
+
+  <header>
+    <div class="left-header">
+      <div class="logo">Hot Beans</div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="https://kristoffe99.github.io/home/">Home</a></li>
+        <li><a href="https://kristoffe99.github.io/meet-the-team/">Meet the team</a></li>
+        <li><a href="https://kristoffe99.github.io/profession/">Profession</a></li>
+        <li><a href="https://kristoffe99.github.io/apply/">Apply</a></li>
+        <li><a href="https://kristoffe99.github.io/courses/">Courses</a></li>
+      </ul>
+    </nav>
+
+    <input class="search-box" type="text" placeholder="Search">
+  </header>
 
   <div class="w3-row-padding">
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="prof.jpg" alt="Norway" style="width:30%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
+      <img src="prof.jpg" alt="Samantha Readings-CEO">
+      <div class="w3-container">
         <p><b>Samantha Readings</b></p>
         <p>CEO</p>
       </div>
     </div>
-    
-  <div class="w3-row-padding">
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="idk.jpg" alt="Jake Smith-CFO" style="width:30%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
+      <img src="idk.jpg" alt="Jake Smith-CFO">
+      <div class="w3-container">
         <p><b>Jake Smith</b></p>
         <p>CFO</p>
       </div>
     </div>
 
-<div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="COO.jpeg" alt="Ali Nasab-COO" style="width:30%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
+      <img src="COO.jpeg" alt="Ali Nasab-COO">
+      <div class="w3-container">
         <p><b>Ali Nasab</b></p>
         <p>COO</p>
       </div>
     </div>
-	
-	<div class="w3-row-padding">
+
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="CMO.avif" alt="Faith Williams-CMO" style="width:30%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
+      <img src="CMO.avif" alt="Faith Williams-CMO">
+      <div class="w3-container">
         <p><b>Faith Williams</b></p>
         <p>CMO</p>
       </div>
     </div>
 
-    </div>
   </div>
-</div>
-</div>
-</div>
-</div>
+
 </body>
 </html>
